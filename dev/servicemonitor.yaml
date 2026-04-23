@@ -1,0 +1,17 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: gitops-app-monitor
+  namespace: dev
+  labels:
+    release: monitoring
+spec:
+  selector:
+    matchLabels:
+      app: gitops-app
+  endpoints:
+    - port: service
+      path: /metrics
+  namespaceSelector:
+    matchNames:
+      - dev
