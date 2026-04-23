@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: gitops-app
-          image: musty101/gitops-app:1.0.0   # ← GitHub Actions updates this line
+          image: musty101/gitops-app:a33004b2
           ports:
             - containerPort: 3000
 ---
