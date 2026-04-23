@@ -8,7 +8,7 @@ spec:
 
   source:
     repoURL: https://github.com/Musty2025x/gitops-k8s-config.git
-    targetRevision: main
+    targetRevision: master
     path: dev
 
   destination:
