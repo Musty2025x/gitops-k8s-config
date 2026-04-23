@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: gitops-app
-          image: musty101/gitops-app:222bd8e8
+          image: musty101/gitops-app:a33004b2
           ports:
             - containerPort: 3000
